@@ -1,18 +1,24 @@
 return PlaceObj("ModDef", {
 	"title", "Extractor AI Researchable at Start",
+	"short_description", "Makes the vanilla Extractor AI breakthrough researchable from game start. You still research it yourself.",
+	"last_changes", "v1.1 - Added Paradox Mods Summary and Last Changes so the mod can be uploaded.",
 	"description", [[Makes the vanilla Breakthrough "Extractor AI" available to research from the start of a new game (and on existing saves).
 
 It is only revealed — you still spend a Tech Point / research it yourself.
-Metals and Rare Metals extractors can then work without crews at 50 performance after you research it (close worker slots as usual).
+After research, Metals and Rare Metals extractors can work without crews at 50 performance (close worker slots as usual).
 
 Does not grant the tech for free. Does not change extractor buildings.
 
-Compatible with Surviving Mars: Relaunched. New game recommended; also works on loaded saves.]],
+Source (public, fork and edit freely):
+https://github.com/khunpoom/ExtractorAI-ResearchableAtStart
+
+Written entirely by Grok (xAI) for this project. You may modify, republish, and continue the mod as you like.]],
 	"id", "xiperxp_ExtractorAIResearchableAtStart",
 	"author", "xiperxp",
-	"version", 1,
+	"image", "Preview.jpg",
+	"version", 2,
 	"version_major", 1,
-	"version_minor", 0,
+	"version_minor", 1,
 	"lua_revision", 350453,
 	"saved_with_revision", 350453,
 	"code", {

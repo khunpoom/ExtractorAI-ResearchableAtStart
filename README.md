@@ -1,26 +1,38 @@
 # Extractor AI Researchable at Start
 
-Private mod for **Surviving Mars: Relaunched**.
+Public mod for **Surviving Mars: Relaunched**.
 
-Reveals the vanilla Breakthrough **Extractor AI** at game start so you can research it. Does **not** research it for free.
+**GitHub:** https://github.com/khunpoom/ExtractorAI-ResearchableAtStart
+
+Makes the vanilla Breakthrough **Extractor AI** researchable from the start of the game. It does **not** research the tech for you.
 
 After you research it, Metals / Rare Metals extractors can run unmanned at 50% performance (close worker slots as usual).
 
+## Credit
+
+This mod was written entirely by **Grok (xAI)** for [khunpoom](https://github.com/khunpoom) / xiperxp.
+
+Fork it, edit it, republish it. MIT licensed — do whatever you want.
+
 ## Install
 
-1. Download this repo as ZIP (Code → Download ZIP).
-2. Extract. Copy the folder `ExtractorAI_ResearchableAtStart` into your game Mods folder:
+1. Download this repo as ZIP (**Code → Download ZIP**), or copy the `ExtractorAI_ResearchableAtStart` folder.
+2. Place that folder in:
    - `%AppData%\\Surviving Mars Relaunched\\Mods`
    - or `%AppData%\\Surviving Mars\\Mods`
-3. Create the `Mods` folder if it does not exist.
-4. Enable the mod in the in-game Mod Manager.
-5. Start a new game (recommended). Existing saves also work.
+3. Enable it in the in-game Mod Manager.
+4. New game recommended. Existing saves work too.
 
-## Check
+## Paradox Mods upload
 
-Open Research and look for **Extractor AI** in Breakthroughs. You still have to research it.
+The in-game uploader needs these fields (already in `metadata.lua`):
 
-## Notes
+- **Summary (PDX only)** → `short_description`
+- **Last Changes** → `last_changes`
+- **Preview image** → `Preview.jpg` (optional but PDX wants it)
 
-- If Extractor AI was going to appear from an anomaly on this map, it is removed from that random queue so it is not duplicated.
-- Does not change extractor buildings or production formulas.
+If you still see those errors in the Mod Editor, paste the same two strings into the empty fields and save before uploading.
+
+## What it does
+
+On `CityStart` and `LoadGame`, the mod calls `SetTechDiscovered("ExtractorAI")` if the breakthrough is not already discovered/researched. It also removes Extractor AI from the random anomaly queue so it is not duplicated.
