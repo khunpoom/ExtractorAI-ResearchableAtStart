@@ -1,7 +1,7 @@
 return PlaceObj("ModDef", {
 	"title", "Extractor AI Researchable at Start",
 	"short_description", "Makes the vanilla Extractor AI breakthrough researchable from game start. You still research it yourself.",
-	"last_changes", "v1.1 - Added Paradox Mods Summary and Last Changes so the mod can be uploaded.",
+	"last_changes", "v1.2 - Added 1024x1024 Preview.jpg so Paradox Mods upload can proceed.",
 	"description", [[Makes the vanilla Breakthrough "Extractor AI" available to research from the start of a new game (and on existing saves).
 
 It is only revealed — you still spend a Tech Point / research it yourself.
@@ -16,9 +16,9 @@ Written entirely by Grok (xAI) for this project. You may modify, republish, and 
 	"id", "xiperxp_ExtractorAIResearchableAtStart",
 	"author", "xiperxp",
 	"image", "Preview.jpg",
-	"version", 2,
+	"version", 3,
 	"version_major", 1,
-	"version_minor", 1,
+	"version_minor", 2,
 	"lua_revision", 350453,
 	"saved_with_revision", 350453,
 	"code", {
